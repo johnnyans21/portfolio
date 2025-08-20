@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* Apply Montserrat only to header links */
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: #1a1a1a;
+    background-image: url(images/Website\ Background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Create the logo design here*/
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin : 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff9800;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    transform: translateY(-6px);
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff9800;
+}
+
+#about{
+    padding: 250px 0;
+    color: gold;
+}
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 90px;
+}
+
+.about-col-1 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    margin-top: 30px;
+ 
+}
+.sub-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffbe0a;
+    margin:0%;
+
+
+}
+
+.about-col-2 p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.tab_titles p {
+    display: flex;
+    margin-top: 20px;
+    line-height: 0%;
+}
+
+.tab_titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+
+.tab_links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    background: #b1701c;
+    border-radius: 7px;
+}
+
+.tab_links::after {
+    content: '';
+    width: 100;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab_links.activelink::after {
+    width: 20%;
+    background: #ff9800;
+    color: #ffffff;
+}
+
+.tab_contents {
+    color: aliceblue;    
+}
+
+.tab_contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab_contents ul li span {
+    
+    color: #ff9800;
+    font-size: 15px;
+}
+
+
+.tab_contents{
+    display: none;
+}
+
+.tab_contents.activetab {
+    display: block;
+}
+
+#services {
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: -90px;
+
+}
+.serviceslist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.serviceslist div {
+    background: #2e2d2d;
+    padding: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    transition:all 0.5s, transform 0.5s;
+}
+
+
+.serviceslist div i {
+    font-size: 35px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.serviceslist div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.serviceslist div a {
+    text-decoration: underline;
+    color: #ff9800;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.serviceslist div:hover {
+    background: #ffffff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.portfolio_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.sub-title-1 h1 {
+    font-size: 30px;
+    margin-top: -100px;
+    color: #ffbe0a;
+}
+
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    transition: opacity 0.5s;
+} 
+
+
+.work:hover img {
+    transform: scale(0.9);
+}
+
+.button {
+    display: block;
+margin: 50px auto;
+width: fit-content;
+    padding: 10px 40px;
+    background: #ff9800;
+    color: #000000;
+   text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.5s;
+    
+} 
+.button:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-5px);
+
+    
+}
+
+/* Contact Section */
+.contact-left {
+    flex-basis: 35%;
+    margin-top: 1800px;
+}
+   
+.contact-right {
+    flex-basis: 60%;
+    margin-top: 1800px;
+    padding: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* space between icons */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; /* background */
+    color: #000000; /* icon color */
+    border-radius: 50%; /* makes it circular */
+    font-size: 18px; /* icon size */
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    text-decoration: none; /* remove underline */
+}
+
+.social-icons a:hover {
+    background-color: #ffffff; /* change background on hover */
+    color: #000000; /* change icon color on hover */
+    transform: scale(1.5); /* small zoom effect */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800; /* button background */
+    color: #000000; /* button text color */
+    border-radius: 5px;
+    text-decoration: none; /* remove underline */
+    font-size: 16px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    font-weight: bold; /* make text bold */
+    
+}
+
+.download-btn:hover {
+    background-color: #ffffff; /* change background on hover */
+    color: #000000; /* change text color on hover */
+    transform: scale(1.1); /* small zoom effect */
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #282828; /* input background */
+    color: #ffffff; /* input text color */
+    
+}
+
+form download-btn {
+    padding: 14px 60px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ff9800; /* button background */
+    color: #000000; /* button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+    padding: 7px 0;
+    background-color: #4d4a4a; /* footer background */
+    color: #ffffff; /* footer text color */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav .fa-solid  {
+    display: none;
+}
+
+/* css for smaller screen */
+@media only screen and (max-width: 600px) {
+    #header {
+        
+        /* Get a picture for mobile phone version */
+        background-image: url(images/Website\ Background.jpg);
+        background-size: cover;
+        
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid {
+    display: block;
+    font-size: 25px;
+    
+}
+
+nav ul {
+    background: #ff9800;;
+    position: fixed;
+    top: 0;
+    right: 0;
+color: #000000;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px ;
+    
+nav ul li {
+        display: block;
+        margin: 5px;
+   
+}
+}
+}
