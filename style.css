@@ -5,6 +5,11 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -33,6 +38,8 @@ nav{
 }
 
 nav ul li{
+    position: sticky;
+    top: 0;
     display: inline-block;
     list-style: none;
     margin : 10px 20px;
@@ -42,18 +49,18 @@ nav ul li a{
     color: #fff;
     font-size: 18px;
     transition: all 0.3s ease;
-    position: relative;
     padding: 5px 10px;
 }
+    
 nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
     background: #ff9800;
-    position: absolute;
+
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    
 }
 
 nav ul li a:hover::after{
@@ -232,14 +239,14 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-#portfolio {
+#projects {
     padding: 50px 0;
     text-align: center;
     margin-top: 30px;
     
 }
 
-.portfolio_list {
+.projects_list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
