@@ -321,7 +321,7 @@ width: fit-content;
    
 .contact-right {
     flex-basis: 60%;
-    
+    align-items: right;
 }
 
 .social-icons {
