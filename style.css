@@ -81,6 +81,7 @@ nav ul li a:hover::after{
     color: #ff9800;
 }
 
+
 #about{
     padding: 250px 0;
     color: gold;
@@ -315,13 +316,12 @@ width: fit-content;
 /* Contact Section */
 .contact-left {
     flex-basis: 35%;
-    margin-top: 1800px;
+    
 }
    
 .contact-right {
     flex-basis: 60%;
-    margin-top: 1800px;
-    padding: auto;
+    
 }
 
 .social-icons {
@@ -418,9 +418,7 @@ nav .fa-solid  {
 /* css for smaller screen */
 @media only screen and (max-width: 600px) {
     #header {
-        
-        /* Get a picture for mobile phone version */
-        background-image: url(images/Website\ Background.jpg);
+        background-image: url(IMAGES/Mobile_Wallpaper_for_portfolio.jpg);
         background-size: cover;
         
     }
@@ -438,19 +436,58 @@ nav .fa-solid  {
 }
 
 nav ul {
-    background: #ff9800;;
+    background: #ff9800;
     position: fixed;
     top: 0;
-    right: 0;
-color: #000000;
+    left: -200px;           
+    color: #000000;
     width: 200px;
     height: 100vh;
-    padding-top: 50px ;
+    padding-top: 50px;
+    transition: left 0.5s;
+}
+
+
     
 nav ul li {
         display: block;
-        margin: 5px;
-   
+        margin: 20px; 
+    
 }
+.sub-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffbe0a;
+    margin: 0%;
 }
+    
+.about-col-1, .about-col-2 {
+    flex-basis: 100%;
+    
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+
+.about-col-2 {
+    font-size: 15px;
+}
+
+.tab_titles {
+    font-size: 10px;
+    flex-direction: row;
+    
+}
+
+    .tab_links {
+        font-size: 9px;
+        margin-right: 20px;
+        
+    }
+
+
+}
+.contact-left, .contact-right {
+    flex-basis: 100%;
+    
 }
