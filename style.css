@@ -321,7 +321,7 @@ width: fit-content;
    
 .contact-right {
     flex-basis: 60%;
-    align-items: right;
+    
 }
 
 .social-icons {
@@ -490,4 +490,10 @@ nav ul li {
 .contact-left, .contact-right {
     flex-basis: 100%;
     
+}
+
+#message {
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
 }

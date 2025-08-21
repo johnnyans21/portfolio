@@ -164,6 +164,7 @@ I enjoy combining technology, creativity, and organization to help individuals a
                     <textarea name="Message" rows="7" placeholder="Write Message"></textarea>
                     <button type="submit" class="download-btn">Submit</button>
                 </form>
+                <span id="message"></span>
             </div>
         </div>
     </div>
@@ -193,11 +194,18 @@ I enjoy combining technology, creativity, and organization to help individuals a
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyaYQkrAkdTZQ72A_kSrOfjPGGABCGCdDlTmgu0Hk51IvWfTHOhAhAeQsvXS0jyf5e5/exec'
   const form = document.forms['submit-to-google-sheet']
-
+const message = document.getElementById("message")
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        
+        message.innerHTML = "Message sent successfully";
+        setTimeout(function() {
+            message.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
