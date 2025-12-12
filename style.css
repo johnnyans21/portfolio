@@ -530,8 +530,7 @@ nav ul li {
     width: 100%;
     max-width: 700px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     overflow: hidden;          /* keeps corners rounded */
     display: block;
-    margin: -50px auto 0 auto; /* negative top margin moves it up & centers horizontally */
+    margin: 0 auto; /* negative top margin moves it up & centers horizontally */
 }
