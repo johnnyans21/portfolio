@@ -32,6 +32,33 @@ nav{
     flex-wrap: wrap;
 }
 
+/* Elevator Pitch Video Section */
+#pitch-video {
+    margin: 60px auto;
+    text-align: center;
+}
+
+#pitch-video .sub-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#pitch-video video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Optional: smooth hover effect */
+#pitch-video video:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+
 /* Create the logo design here*/
 .logo{
     width: 140px;
