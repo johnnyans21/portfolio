@@ -524,3 +524,14 @@ nav ul li {
     margin-top: 10px;
     display: block;
 }
+
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;          /* ensures corners stay rounded */
+    display: block;
+    margin: 0 auto;            /* centers the video */
+}
