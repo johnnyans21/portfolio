@@ -532,5 +532,5 @@ nav ul li {
     border-radius: 15px;
     overflow: hidden;          /* keeps corners rounded */
     display: block;
-    margin: -500px auto; /* negative top margin moves it up & centers horizontally */
+    margin: 500px auto; /* negative top margin moves it up & centers horizontally */
 }
