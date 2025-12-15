@@ -32,33 +32,6 @@ nav{
     flex-wrap: wrap;
 }
 
-/* Elevator Pitch Video Section */
-#pitch-video {
-    margin: 60px auto;
-    text-align: center;
-}
-
-#pitch-video .sub-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-#pitch-video video {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Optional: smooth hover effect */
-#pitch-video video:hover {
-    transform: scale(1.01);
-    transition: 0.3s ease-in-out;
-}
-
 /* Create the logo design here*/
 .logo{
     width: 140px;
@@ -458,7 +431,7 @@ nav .fa-solid  {
     }
     nav .fa-solid {
     display: block;
-    font-size: 25px;
+    font-size: 23px;
     
 }
 
@@ -497,7 +470,7 @@ nav ul li {
 }
 
 .about-col-2 {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .tab_titles {
@@ -526,14 +499,6 @@ nav ul li {
 }
 
 
-body {
-    display: flex;                  /* Enables flexbox layout */
-    justify-content: center;         /* Centers horizontally */
-    align-items: center;             /* Centers vertically */
-    min-height: 100vh;               /* Full viewport height */
-    background-color: #f5f5f5;       /* Page background color */
-}
-
 .video-container {
     display: flex;                  /* Flexbox for video */
     justify-content: center;         /* Center video */
@@ -545,5 +510,13 @@ body {
     max-width: 450px;                /* 👈 Controls size */
     border-radius: 15px;             /* Rounded corners */
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    padding-top: 1000px;
+    padding-top: auto;
+}
+
+.elevator_pitch {
+    text-align: center;              /* Center the heading text */
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffbe0a;
+    margin-top: 5px;
 }
