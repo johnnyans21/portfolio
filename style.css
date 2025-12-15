@@ -534,16 +534,15 @@ body {
     background-color: #f5f5f5;       /* Page background color */
 }
 
-/* Video container */
 .video-container {
-    width: 100%;                     /* Container spans full width */
-    display: flex;                   /* Flexbox layout */
-    justify-content: center;         /* Center video horizontally */
+    display: flex;                  /* Flexbox for video */
+    justify-content: center;         /* Center video */
 }
 
 /* Video styling */
 .custom-video {
-    width: 100%;                     /* Responsive width */
-    max-width: 500px;                /* 👈 Controls video size */
+    width: 100%;                     /* Responsive */
+    max-width: 450px;                /* 👈 Controls size */
     border-radius: 15px;             /* Rounded corners */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Shadow */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
