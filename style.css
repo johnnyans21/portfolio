@@ -526,17 +526,24 @@ nav ul li {
 }
 
 
-.video-container {
-    display: flex;                 /* Enables flexible layout */
-    justify-content: center;        /* Centers video horizontally */
-    align-items: center;            /* Centers video vertically */
-    padding: 40px;                  /* Space around the video */
-    background-color: #f5f5f5;      /* Light background color */
+body {
+    display: flex;                  /* Enables flexbox layout */
+    justify-content: center;         /* Centers horizontally */
+    align-items: center;             /* Centers vertically */
+    min-height: 100vh;               /* Full viewport height */
+    background-color: #f5f5f5;       /* Page background color */
 }
 
-/* Style for the video itself */
+/* Video container */
+.video-container {
+    width: 100%;                     /* Container spans full width */
+    display: flex;                   /* Flexbox layout */
+    justify-content: center;         /* Center video horizontally */
+}
+
+/* Video styling */
 .custom-video {
-    width: 100%;                    /* Makes video responsive */
-    max-width: 700px;               /* Limits maximum width */
-    border-radius: 15px;            /* Rounded corners */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Soft shadow */
+    width: 100%;                     /* Responsive width */
+    max-width: 500px;                /* 👈 Controls video size */
+    border-radius: 15px;             /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Shadow */
