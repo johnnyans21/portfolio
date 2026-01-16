@@ -11,7 +11,7 @@ html {
 }
 
 body{
-    background: #080808;
+    background: #000000;
     color: #fff;
 }
 #header{
@@ -315,6 +315,7 @@ width: fit-content;
 
 /* Contact Section */
 .contact-left {
+    align-self: ;
     flex-basis: 35%;
     
 }
@@ -499,24 +500,3 @@ nav ul li {
 }
 
 
-.video-container {
-    display: flex;                  /* Flexbox for video */
-    justify-content: center;         /* Center video */
-}
-
-/* Video styling */
-.custom-video {
-    width: 100%;                     /* Responsive */
-    max-width: 450px;                /* 👈 Controls size */
-    border-radius: 15px;             /* Rounded corners */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    padding-top: auto;
-}
-
-.elevator_pitch {
-    text-align: center;              /* Center the heading text */
-    font-size: 30px;
-    font-weight: 600;
-    color: #ffbe0a;
-    margin-top: 5px;
-}
